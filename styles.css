@@ -1,57 +1,85 @@
 
-body{ background:#F5EFEB;}
-nav ul {
-  font-size: 15px ;
-  background: #D7E9EF;
-  padding: 20px;
-  display: flex;
-  flex-direction:row ;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap:wrap;
- 
-}
-nav ul li {
- color: #D7E9EF ;
- background-color:#F4C6D5 ;
-  padding: 50px 50px 50px 50px;
-  margin: auto;
-}
+body{ background:#F5EFEB; }
+
+.own{
+   background:#D7E9EF;
+   box-shadow: 0px 0px 0px var( --clr-gray200);
+   margin: 0;
+   padding:3rem 0;
+   border-radius: var(--radius);
+   display:flex;
+   justify-content: center;
+   align-items: center;
+  
+  }
+  .item{
+    list-style: none;
+    margin-inline: 4rem;
+  }
+
+  .item a{
+    text-decoration: none;
+    color: #cd104d;
+    font-size: 20px;
+    font-family: montserrat , sana-serif;
+    text-align: center;
+    cursor: pointer;
+    transition:all 200ms ease-in;
 
 
-h1{color:#F6648E ; font-size: 50px; text-align: center ; font-style: oblique; }
-h2{color: #3681AB ; font-size: 25px; text-align:left ; font-style: oblique; 
-padding: 10px 15px 15px 15px; ;}
-#welcome { color:#fc7317;font-size: 30px;text-align: center; font-style:inherit ; 
+  }
+
+  .item a:hover{
+  color: #fc7317;
+  }
+
+
+  h1{
+  color:#F6648E ; 
+  font-size: 50px;
+  text-align: center ;
+   font-style: oblique;
+   }
+
+h2{
+  color: #3681AB ; 
+  font-size: 25px;
+  text-align:center ;
+  font-style: oblique; 
+  padding: 10px 15px 15px 15px; ;
+  border: dashed 2px #fc7317;
+  display: inline-block;
+
+}
+
+#welcome { 
+  color:#fc7317;
+  font-size: 30px;
+  text-align: center;
+   font-style:inherit ; 
   border: 6px;
   margin: auto; 
   padding: 2px 15px 15px 15px; }
  
 
   ul li{
-  
     display:inline;
   }
   li{
     margin-inline-start: 16px;
   }
   
-#weekdays{
-  color:#cd4662;
+#weekdays , #resources , #teacher , #schedule , #gallery{
+   color:#cd4662;
    font-size: 20px;
-    font-style:inherit ; 
+   font-style:inherit ; 
    border: 3px;
-   margin:auto
+   margin:auto;
+   text-align: center;
   
   }
 
 
-#resources{color:#cd4662; font-size: 20px; font-style:inherit ; 
-  border: 3px;
-  margin:auto}
-#teacher{color:#cd4662; font-size: 20px; font-style:inherit ; 
-    border: 3px;
-    margin:auto}
 
 .gallery {
     margin:auto;
@@ -86,5 +114,11 @@ padding: 10px 15px 15px 15px; ;}
     .gallery img {
       width: 100%;
     }
+    @media all and(min-width:800px) {
    
+    }
+    @media all and(min-width:600px) {
+      
+      
+    }
   }
