@@ -9,10 +9,7 @@ body{ background:#F5EFEB; }
    border-radius: var(--radius);
    display:flex;
    gap: 20px;
-   flex-wrap: wrap;
-
-   
-  
+   flex-wrap: wrap;  
   }
   .item{
     list-style: none;
@@ -21,7 +18,6 @@ body{ background:#F5EFEB; }
     padding: 20px 20px 20px 20px;
     border: dashed 2px #D58718;
     margin: auto;
-  
   }
 
   .item a{
@@ -32,8 +28,6 @@ body{ background:#F5EFEB; }
     text-align: center;
     cursor: pointer;
     transition:all 200ms ease-in;
-
-
   }
 
   .item a:hover{
@@ -44,11 +38,13 @@ body{ background:#F5EFEB; }
     width:100% ;
     border-spacing: 2px;
   }
+
   th{
     background:#EFD6D5 ;
     height: 40px;
     border: dotted 2px #BCA446 ;
   }
+
   td{
     background: #FDECDF ;
     height:40px;
@@ -74,41 +70,26 @@ h2{
   padding: 10px 15px 15px 15px; ;
   border: dashed 2px #D58718;
   display: inline-block;
-
 }
 
-#welcome { 
-  color:#cd4662;
-  font-size: 30px;
-  text-align: center;
-   font-style:inherit ; 
-  border: 6px;
-  margin: auto; 
-  padding: 2px 15px 15px 15px; }
- 
-  
-#weekdays , #resources , #teacher , #schedule , #gallery{
+#welcome, #weekdays , #resources , #teacher , #schedule , #gallery{
    color:#cd4662;
    font-size: 20px;
    font-style:inherit ; 
    border: 3px;
    margin:auto;
    text-align: center;
-  
   }
-
-
 
 .gallery {
     margin:auto;
-    width: 40%;
-    height: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* gap: 10px; */
-    /* padding: 20px; */
-  }
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    
+}
   .gallery img {
     width: 70%;
     height: 70%;
@@ -118,19 +99,49 @@ h2{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all ease-in-out 0.3s;
   }
+  h3{
+    color: #3681AB ;
+    font-size: 20px;
+    padding-left: 30px;
+    text-align:left ;
+    font-style: oblique;
+  }
+  ul li{
+    text-align: left;
+    font-size: 20px;
+    padding-left: 30px;
+    text-align:left ;
+    font-style: bold;
+  }
 
   .gallery img:hover {
-    /* transform: scale(1.1); */
+transform: scale(1.1);
     width: 100%;
   }
   @media (max-width: 768px) {
     .gallery {
-      flex-direction: row;
-      align-items: center;
+      grid-template-columns: repeat(1, 1fr);
     }
-
     .gallery img {
       width: 100%;
+    }
+    h1{
+      font-size: 30px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    .item a{
+      font-size: 15px;
+      padding: auto
+    }
+    .item{
+      margin: auto;
+      padding: 10px 10px 10px 10px;
+    }
+    .own{
+      margin: auto;
+      padding: 10px 10px 10px 10px;
     }
 
   }
