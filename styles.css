@@ -2,14 +2,16 @@
 body{ background:#F5EFEB; }
 
 .own{
-   background:#D7E9EF;
+   background:#F2D7D7;
    box-shadow: 0px 0px 0px #ccc;
    margin: 0;
    padding:2rem 0;
    border-radius: var(--radius);
    display:flex;
-   justify-content: center;
-   align-items: center;
+   gap: 20px;
+   flex-wrap: wrap;
+
+   
   
   }
   .item{
@@ -17,7 +19,7 @@ body{ background:#F5EFEB; }
     margin-inline: 4rem;
     background-color:#FBE8DA ;
     padding: 20px 20px 20px 20px;
-    border: dashed 2px #fc7317;
+    border: dashed 2px #D58718;
     margin: auto;
   
   }
@@ -35,18 +37,33 @@ body{ background:#F5EFEB; }
   }
 
   .item a:hover{
-  color: #fc7317;
+  color: #577371;
   }
 
+  table{
+    width:100% ;
+    border-spacing: 2px;
+  }
+  th{
+    background:#EFD6D5 ;
+    height: 40px;
+    border: dotted 2px #BCA446 ;
+  }
+  td{
+    background: #FDECDF ;
+    height:40px;
+    text-align: center;
+    border: solid 2px #E6B079 ;
+  }
 
   h1{
-  color:#F6648E ; 
+  color:#3681AB ; 
   font-size: 50px;
   text-align: center ;
   font-style: oblique;
   border: 5px;
   padding: 3px;
-   }
+  }
 
 h2{
   color: #3681AB ; 
@@ -55,13 +72,13 @@ h2{
   font-style: oblique; 
   background-color:#FBE8DA ;
   padding: 10px 15px 15px 15px; ;
-  border: dashed 2px #fc7317;
+  border: dashed 2px #D58718;
   display: inline-block;
 
 }
 
 #welcome { 
-  color:#fc7317;
+  color:#cd4662;
   font-size: 30px;
   text-align: center;
    font-style:inherit ; 
@@ -69,13 +86,6 @@ h2{
   margin: auto; 
   padding: 2px 15px 15px 15px; }
  
-
-  ul li{
-    display:inline;
-  }
-  li{
-    margin-inline-start: 16px;
-  }
   
 #weekdays , #resources , #teacher , #schedule , #gallery{
    color:#cd4662;
@@ -84,7 +94,6 @@ h2{
    border: 3px;
    margin:auto;
    text-align: center;
-  
   
   }
 
@@ -116,18 +125,12 @@ h2{
   }
   @media (max-width: 768px) {
     .gallery {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
 
     .gallery img {
       width: 100%;
     }
-    @media all and(min-width:800px) {
-    .item{order: 1;}
-    }
-    @media all and(min-width:600px) {
-      
-      
-    }
+
   }
