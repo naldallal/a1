@@ -1,23 +1,62 @@
 
-/* h1{
-    font-size: xx-small;
-} */
-header{
-  background-color: antiquewhite;
+body{ background:#F5EFEB;}
+nav ul {
+  font-size: 15px ;
+  background: #D7E9EF;
+  padding: 20px;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+ 
 }
-ul li{
+nav ul li {
+ color: #D7E9EF ;
+ background-color:#F4C6D5 ;
+  padding: 50px 50px 50px 50px;
+  margin: auto;
+}
+
+
+h1{color:#F6648E ; font-size: 50px; text-align: center ; font-style: oblique; }
+h2{color: #3681AB ; font-size: 25px; text-align:left ; font-style: oblique; 
+padding: 10px 15px 15px 15px; ;}
+#welcome { color:#fc7317;font-size: 30px;text-align: center; font-style:inherit ; 
+  border: 6px;
+  margin: auto; 
+  padding: 2px 15px 15px 15px; }
+ 
+
+  ul li{
   
-  display:inline;
-  /* gap:5cm; */
-}
-li{
-  margin-inline-start: 1cm;
-}
+    display:inline;
+  }
+  li{
+    margin-inline-start: 16px;
+  }
+  
+#weekdays{
+  color:#cd4662;
+   font-size: 20px;
+    font-style:inherit ; 
+   border: 3px;
+   margin:auto
+  
+  }
+
+
+#resources{color:#cd4662; font-size: 20px; font-style:inherit ; 
+  border: 3px;
+  margin:auto}
+#teacher{color:#cd4662; font-size: 20px; font-style:inherit ; 
+    border: 3px;
+    margin:auto}
 
 .gallery {
     margin:auto;
-    width: 70%;
-    height: 70%;
+    width: 40%;
+    height: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,4 +86,5 @@ li{
     .gallery img {
       width: 100%;
     }
+   
   }
