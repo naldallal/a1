@@ -3,9 +3,9 @@ body{ background:#F5EFEB; }
 
 .own{
    background:#D7E9EF;
-   box-shadow: 0px 0px 0px var( --clr-gray200);
+   box-shadow: 0px 0px 0px #ccc;
    margin: 0;
-   padding:3rem 0;
+   padding:2rem 0;
    border-radius: var(--radius);
    display:flex;
    justify-content: center;
@@ -15,6 +15,11 @@ body{ background:#F5EFEB; }
   .item{
     list-style: none;
     margin-inline: 4rem;
+    background-color:#FBE8DA ;
+    padding: 20px 20px 20px 20px;
+    border: dashed 2px #fc7317;
+    margin: auto;
+  
   }
 
   .item a{
@@ -38,7 +43,9 @@ body{ background:#F5EFEB; }
   color:#F6648E ; 
   font-size: 50px;
   text-align: center ;
-   font-style: oblique;
+  font-style: oblique;
+  border: 5px;
+  padding: 3px;
    }
 
 h2{
@@ -46,6 +53,7 @@ h2{
   font-size: 25px;
   text-align:center ;
   font-style: oblique; 
+  background-color:#FBE8DA ;
   padding: 10px 15px 15px 15px; ;
   border: dashed 2px #fc7317;
   display: inline-block;
@@ -76,6 +84,7 @@ h2{
    border: 3px;
    margin:auto;
    text-align: center;
+  
   
   }
 
@@ -115,7 +124,7 @@ h2{
       width: 100%;
     }
     @media all and(min-width:800px) {
-   
+    .item{order: 1;}
     }
     @media all and(min-width:600px) {
       
