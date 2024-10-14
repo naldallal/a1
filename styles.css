@@ -19,7 +19,6 @@ body{ background:#F5EFEB; }
     border: dashed 2px #D58718;
     margin: auto;
   }
-
   .item a{
     text-decoration: none;
     color: #cd104d;
@@ -29,29 +28,24 @@ body{ background:#F5EFEB; }
     cursor: pointer;
     transition:all 200ms ease-in;
   }
-
   .item a:hover{
   color: #577371;
   }
-
   table{
     width:100% ;
     border-spacing: 2px;
   }
-
   th{
     background:#EFD6D5 ;
     height: 40px;
     border: dotted 2px #BCA446 ;
   }
-
   td{
     background: #FDECDF ;
     height:40px;
     text-align: center;
     border: solid 2px #E6B079 ;
   }
-
   h1{
   color:#3681AB ; 
   font-size: 50px;
@@ -60,7 +54,6 @@ body{ background:#F5EFEB; }
   border: 5px;
   padding: 3px;
   }
-
 h2{
   color: #3681AB ; 
   font-size: 25px;
@@ -71,7 +64,6 @@ h2{
   border: dashed 2px #D58718;
   display: inline-block;
 }
-
 #welcome, #weekdays , #resources , #teacher , #schedule , #gallery{
    color:#cd4662;
    font-size: 20px;
@@ -80,7 +72,6 @@ h2{
    margin:auto;
    text-align: center;
   }
-
 .gallery {
     margin:auto;
     width: 60%;
@@ -88,8 +79,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    
-}
+  }
   .gallery img {
     width: 70%;
     height: 70%;
@@ -113,11 +103,11 @@ h2{
     text-align:left ;
     font-style: bold;
   }
-
   .gallery img:hover {
-transform: scale(1.1);
+    transform: scale(1.1);
     width: 100%;
   }
+  /* minor touches for small screens */
   @media (max-width: 768px) {
     .gallery {
       grid-template-columns: repeat(1, 1fr);
@@ -143,5 +133,4 @@ transform: scale(1.1);
       margin: auto;
       padding: 10px 10px 10px 10px;
     }
-
   }
