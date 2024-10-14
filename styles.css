@@ -1,6 +1,11 @@
+/* Done by:
+        Noor Shafeeq Ashoor 202210100
+        Noor Zaher Aldallal 202210337 */
 
+ /* background color */       
 body{ background:#F5EFEB; }
 
+ /* styling colorful and child-friendly design for header section with navigation menu  */
 .own{
    background:#F2D7D7;
    box-shadow: 0px 0px 0px #ccc;
@@ -28,9 +33,11 @@ body{ background:#F5EFEB; }
     cursor: pointer;
     transition:all 200ms ease-in;
   }
+  /* styling hover effects on navigation items*/
   .item a:hover{
   color: #577371;
   }
+  /* styling child-friendly Weekly Schedule */
   table{
     width:100% ;
     border-spacing: 2px;
@@ -46,6 +53,8 @@ body{ background:#F5EFEB; }
     text-align: center;
     border: solid 2px #E6B079 ;
   }
+
+  /* styling colorful h1 , h2 and h3 */
   h1{
   color:#3681AB ; 
   font-size: 50px;
@@ -64,14 +73,25 @@ h2{
   border: dashed 2px #D58718;
   display: inline-block;
 }
+
+h3{
+  color: #3681AB ;
+  font-size: 20px;
+  padding-left: 30px;
+  text-align:left ;
+  font-style: oblique;
+}
+/**/
 #welcome, #weekdays , #resources , #teacher , #schedule , #gallery{
    color:#cd4662;
    font-size: 20px;
    font-style:inherit ; 
    border: 3px;
    margin:auto;
-   text-align: center;
+   text-align: center;  
   }
+
+ /*styling the images */
 .gallery {
     margin:auto;
     width: 60%;
@@ -89,13 +109,13 @@ h2{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all ease-in-out 0.3s;
   }
-  h3{
-    color: #3681AB ;
-    font-size: 20px;
-    padding-left: 30px;
-    text-align:left ;
-    font-style: oblique;
+
+  .gallery img:hover {
+    transform: scale(1.1);
+    width: 100%;
   }
+
+  /* styling the Teacher section  */
   ul li{
     text-align: left;
     font-size: 20px;
@@ -103,10 +123,7 @@ h2{
     text-align:left ;
     font-style: bold;
   }
-  .gallery img:hover {
-    transform: scale(1.1);
-    width: 100%;
-  }
+
   /* minor touches for small screens */
   @media (max-width: 768px) {
     .gallery {
